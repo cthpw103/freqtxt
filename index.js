@@ -10,7 +10,7 @@ var end = "";
 
 //letters to frequencies
 
-function letters2freq(string) {
+exports.text2freq = function(string) {
  end = ""; 
   for (count = 0; i < alphabet.length; count++) { 
     end += string.replace(alphabet[i], frequencies[i]);
@@ -20,7 +20,7 @@ function letters2freq(string) {
 
 //frequencies to letters
 
-function letters2freq(string) {
+exports.freq2text = function(string) {
  end = ""; 
   for (count = 0; i < alphabet.length; count++) { 
     end += string.replace(frequencies[i], alphabet[i]);
